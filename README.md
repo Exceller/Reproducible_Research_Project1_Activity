@@ -19,5 +19,7 @@ The variables included in this dataset are:
 
 •interval: Identifier for the 5-minute interval in which measurement was taken
 
-
 The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset.
+
+## ASSIGNMENT
+The objective is to write a report that answers the questions detailed below. Ultimately, the entire assignment should be completed in a single R markdown document that can be processed by knitr and be transformed into an HTML file.
