@@ -7,6 +7,7 @@ This assignment makes use of data from a personal activity monitoring device. Th
 
 ## DATA
 The data for this assignment can be downloaded from the course web site:
+
 •Dataset: Activity monitoring data [52K]
 
 The variables included in this dataset are:
