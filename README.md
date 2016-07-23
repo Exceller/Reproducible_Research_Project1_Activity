@@ -23,3 +23,6 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
 
 ## ASSIGNMENT
 The objective is to write a report that answers the questions detailed below. Ultimately, the entire assignment should be completed in a single R markdown document that can be processed by knitr and be transformed into an HTML file.
+
+### What is mean total number of steps taken per day?
+For this part of the assignment, the missing values in the dataset are ignored.
