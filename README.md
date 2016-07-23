@@ -24,5 +24,9 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
 ## ASSIGNMENT
 The objective is to write a report that answers the questions detailed below. Ultimately, the entire assignment should be completed in a single R markdown document that can be processed by knitr and be transformed into an HTML file.
 
-### What is mean total number of steps taken per day?
+### 1. What is mean total number of steps taken per day?
 For this part of the assignment, the missing values in the dataset are ignored.
+
+### 2. What is the average daily activity pattern?
+2.1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
+2.2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
