@@ -1,9 +1,6 @@
 #Reproducible Research Project 1 Activity
 ## Loading and Preprocessing Data
 
-
-
-## Loading and preprocessing the data
 ##### 1. Load the data (i.e. read.csv())
 
 ```r
