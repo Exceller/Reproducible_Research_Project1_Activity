@@ -123,11 +123,11 @@ stepsByDayMedianImputed <- median(stepsByDayImputed)
 
 
 ```r
-activityDataImputed$dateType <-  ifelse(as.POSIXlt(activityDataImputed$date)$wday %in% c(0,6), 'weekend', 'weekday')
+activityDataImputed$dateType <-  ifelse(as.POSIXlt(activityDataImputed$date2)$wday %in% c(0,6), 'weekend', 'weekday')
 ```
 
 ```
-## Error in as.POSIXlt.character(as.character(x), ...): character string is not in a standard unambiguous format
+## Error in as.POSIXlt.default(activityDataImputed$date2): do not know how to convert 'activityDataImputed$date2' to class "POSIXlt"
 ```
 
 ##### 2. Make a panel plot containing a time series plot
@@ -149,8 +149,6 @@ ggplot(averagedActivityDataImputed, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
-```
-## Error in ggplot(averagedActivityDataImputed, aes(interval, steps)): object 'averagedActivityDataImputed' not found
-```
+![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
 
 
