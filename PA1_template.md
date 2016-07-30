@@ -123,11 +123,8 @@ stepsByDayMedianImputed <- median(stepsByDayImputed)
 
 
 ```r
+activityDataImputed$date2 <- as.Date(activityDataImputed$date,"%m/%d/%Y")
 activityDataImputed$dateType <-  ifelse(as.POSIXlt(activityDataImputed$date2)$wday %in% c(0,6), 'weekend', 'weekday')
-```
-
-```
-## Error in as.POSIXlt.default(activityDataImputed$date2): do not know how to convert 'activityDataImputed$date2' to class "POSIXlt"
 ```
 
 ##### 2. Make a panel plot containing a time series plot
@@ -135,13 +132,6 @@ activityDataImputed$dateType <-  ifelse(as.POSIXlt(activityDataImputed$date2)$wd
 
 ```r
 averagedActivityDataImputed <- aggregate(steps ~ interval + dateType, data=activityDataImputed, mean)
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'dateType' not found
-```
-
-```r
 ggplot(averagedActivityDataImputed, aes(interval, steps)) + 
     geom_line() + 
     facet_grid(dateType ~ .) +

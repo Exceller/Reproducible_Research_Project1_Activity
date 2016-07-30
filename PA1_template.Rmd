@@ -108,6 +108,7 @@ stepsByDayMedianImputed <- median(stepsByDayImputed)
 ##### 1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
 ```{r}
+activityDataImputed$date2 <- as.Date(activityDataImputed$date,"%m/%d/%Y")
 activityDataImputed$dateType <-  ifelse(as.POSIXlt(activityDataImputed$date2)$wday %in% c(0,6), 'weekend', 'weekday')
 ```
 
